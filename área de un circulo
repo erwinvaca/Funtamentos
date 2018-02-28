@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <conio.h>
+#include "iostream"
+using namespace std;
+
+int radio=0;
+double perimetro=0, area=0;
+
+void main()
+{
+    cout << "Circulo\n";
+    cout << "Ingrese el radio: ";
+	cin >> radio;
+    area = 3.1416 * radio * radio ;
+    cout << "Area: " << area << endl;
+    getch;
+}
