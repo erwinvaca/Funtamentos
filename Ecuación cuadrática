@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <conio.h>
+#include "iostream"
+using namespace std;
+void main (){
+	cout << "FORMA GENERAL DE LA ECUACION CUADRATICA : ax^2+-bx+-c = ";
+    cout<< "Introduzca la variable a:";
+    cin>> a;
+    cout<< "Introduzca la variable b:";
+    cin>> b;
+    cout<< "Introduzca la variable c:";
+    cin>> c;
+	(-b +raiz(b*b - 4.0*a*c))/(2.0*a);
+	cout<< "primera solucion :";<<endl
+	cout<< "segunda solucion :";<<endl
+	getch();
+}
