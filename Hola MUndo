@@ -1,0 +1,12 @@
+#include "stdafx.h"
+#include <conio.h>
+#include "iostream"
+using namespace std;
+
+	void main() {
+
+    cout << "Hola Mundo" << endl;
+
+    getch ;
+
+}
