@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <conio.h>
+#include "iostream"
+
+using namespace std;
+
+void main(){
+	float numero,segundo,minuto,hora;
+	cout<<"ingrese cantidad de numero: ";
+	cin>>numero;
+	cin>>minuto=60 segundo;
+	cin>>hora=60 minuto;
+	hora=(numero/3600);
+    minuto =(numero-hora*3600)/60);
+    segundo =numero-(hora*3600+minutos*60);
+	cout<<"hora: ";
+	cout<<"minuto :";
+	cout<<"segundos: ";
+	getch();
+	}
