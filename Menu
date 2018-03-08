@@ -28,6 +28,7 @@ void main(){
 			case 0: cout<< "salir"<<endl;break;
 			default:cout<< "opcion invalida"<<endl;break;
 		}
+	if(opcion>=4 && opcion<=4)
 		cout<<" el resultado es "<<r<<endl;
 		getch();
 		system("cls");
