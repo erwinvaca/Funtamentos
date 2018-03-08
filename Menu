@@ -25,8 +25,8 @@ void main(){
 			case 2:r=a-b; break;
 			case 3:r=a*b; break;
 			case 4:r=a/b; break;
-			case 0: cout<< "salir"<<endl;
-			default:cout<< "opcion invalida"<<endl;
+			case 0: cout<< "salir"<<endl;break;
+			default:cout<< "opcion invalida"<<endl;break;
 		}
 		cout<<" el resultado es "<<r<<endl;
 		getch();
