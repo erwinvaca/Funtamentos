@@ -12,6 +12,7 @@ void main(){
 	int a, b, r, opcion;
 	cout<<"ingrese a y b" <<endl;
 	cin>>a>>b;
+	r=0
 	do {
 		cout<< "1.-suma"<<endl;
 		cout<< "2.-resta"<<endl;
