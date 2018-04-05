@@ -1,0 +1,37 @@
+// series-.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main (){
+	int R,P,A,V,x,op;
+	cout<<"introduzca tamaña de esfera: ";
+	cin>>n;
+	R=N/2
+	cout<<"el radio de la esfera es: ";
+	do{ 
+		cout<<"1.-calculo del perimetro"<<endl;
+		cout<<"2.-calculo del area: "<<endl;
+		cout<<"3.- calculo del volumen: "<<endl;
+		cout<<"4.-salir"<<endl;
+switch (op){
+case1:
+	cout<<"ingrese R: "<<endl;
+	cin>> R;
+    break;
+case2: cout<<"ingrese R:"<<endl;
+	cin>>R;
+	x=4*3.1416*R*R;
+case3: cout<<"ingrese R: "<<endl;
+	cin>>R;
+	x=(4/3)*)3.1416)*R*R*R;
+	break;
+cae0: cout<<"salir"<<endl;break;
+default: cout<<"error"endl;
+}while (op=0)
+	getch;
+	}
