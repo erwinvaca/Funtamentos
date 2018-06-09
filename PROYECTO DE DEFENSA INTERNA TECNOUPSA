@@ -1,0 +1,115 @@
+
+PROYECTO
+PROGRAMACIÓN
+ 
+
+
+DOCENTE:            Karen Infantas
+ESTUDIANTE: 	  Erwin Vaca Soliz
+CARRERA:             Ing. Industrial y Sistemas                                                   SEMESTRE:           1// 2018
+PROYECTO:           Factura virtual
+
+
+
+
+MENU DE PRODUCTOS EN DESCUENTO DEL MINI-SUPER “TRADICION CRUCEÑA”
+
+Introducción. -
+Este programa ha sido elaborado con el fin de poder colaborar a pequeños negocios con sus productos ofertados para la nueva y creciente clientela que van a ir teniendo así las personas encargadas de las cajas no sufran dificultades y puedan hacer su trabajo de manera eficiente evitando la facturación manual que demora.
+
+Planteamiento. -
+Trabajo realizado en el programa Microsoft Visual C++ usando condiciones y cálculos números enteros y decimales.
+
+Método de solución. -
+La persona encargada de manera la caja tendrá la facilidad de obtener con facilidad la cantidad que debe el cliente donde mostrará a factura en la pantalla. y si tiene descuento automáticamente les saldrás ambos precios y facturado.
+
+Explicación. -
+Este programa tiene la facilidad de calcular cantidades tantos grandes como pequeñas a gusto del encargado donde mostrara una factura detallada en la pantalla indicando los productos con nombre y precio. Si el precio es mayor al establecido en el sistema (500bs en este caso) se hará un descuento del 5% en su compra que será calculado de manera inmediata y acertada sin redondear ningún centavo, cifra que será expresada detalladamente en la factura.
+
+Conclusión. -
+El uso del producto es recomendable para las empresas que recién están iniciando actividades o que sean pequeñas como este caso del mini súper TRADICION CRUCEÑA para ahorrar tiempo de estar usando la calculadora o sumando con métodos obsoletos de cálculo y facturación.
+
+
+
+Bibliografía.-
+https://github.com/kinfantas/programacion
+Anexos.
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+#include <cstdlib>
+
+
+char P1[25],P2[25],P3[25],P4[25],P5[25];
+float iva,desc,neto,subtotal,total;
+int pr1,pr2,pr3,pr4,pr5;
+ 
+	using namespace std;
+ 
+int main ()
+ 
+{
+ 
+cout << "///////////////BIENVENIDO AL ASISTENTE DE COMPRA///////////////"<<endl;
+cout << ""<<endl;
+cout << "COMPRAS MAYORES A 500 BS. 5% DE DESCUENTO"<<endl;
+cout<<" "<<endl;
+ 
+cout << "Por favor inserte los productos elegidos"<<endl;
+cout << " "<<endl;
+cout << "Primer producto"<<endl;
+cin >> P1;
+cout << "Precio del primer producto"<<endl;
+cin >>pr1;
+cout << "Segundo producto"<<endl;
+cin >>P2;
+cout << "Precio del segundo producto"<<endl;
+cin >>pr2;
+cout << "Tercer producto"<<endl;
+cin >>P3;
+cout << "Precio del tercer producto"<<endl;
+cin >>pr3;
+cout <<"Cuarto producto"<<endl;
+cin >>P4;
+cout << "Precio del cuarto producto"<<endl;
+cin >>pr4;
+cout <<"Quinto producto"<<endl;
+cin >>P5;
+cout << "Precio del quinto producto"<<endl;
+cin >>pr5;
+subtotal=pr1+pr2+pr3+pr4+pr5;
+ 
+system("cls");
+ 
+cout <<"//////////////////////////FACTURA//////////////////////////"<<endl;
+cout <<"////////               ABASTOS IUTCM             "<<endl;
+cout <<"////////                                         "<<endl;
+cout <<"////////                                         "<<endl;
+cout <<"////////                                         "<<endl;
+cout <<"////////  "<<P1<<"             "<<pr1<<" Bs      "<<endl;
+cout <<"////////  "<<P2<<"             "<<pr2<<" Bs      "<<endl;
+cout <<"////////  "<<P3<<"             "<<pr3<<" Bs      "<<endl;
+cout <<"////////  "<<P4<<"             "<<pr4<<" Bs      "<<endl;
+cout <<"////////  "<<P5<<"             "<<pr5<<" Bs      "<<endl;
+cout <<"////////                Subtotal :      " <<subtotal<<endl;
+cout <<"////////                                          ////////"<<endl;
+cout <<"////////                                          ////////"<<endl;
+ 
+if (subtotal >=500)
+{
+	desc=subtotal*0.05;
+	cout <<"Usted ha recibido un descuento del 5%,  : "<<desc<<" Bs."<<endl;
+}
+else
+{
+	desc=0;
+	cout <<"Usted NO ha recibido descuento "<<endl;
+}
+
+	neto=subtotal-desc;
+    iva=neto*13/100;
+	cout <<"                   monto a pagar es de  : "<<neto<<" Bs."<<endl;
+    cout <<"////////                     IVA :           "<<iva<<endl;
+ 
+system("pause");
+}
