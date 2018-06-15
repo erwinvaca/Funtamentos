@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main (){
+	int n,s,signo,t,p;
+	float a,i;
+	  cout<<"Ingrese a: "<<endl;
+	  cin>>c;
+	  cout<<"Ingrese n: "<<endl;
+	  cin>>n;
+	  s=0;
+	  signo=1;
+	    for(i=1;i<=n;i++){
+		  p=pow(a,i);
+		  s=(s+p)*signo;
+		  signo=signo*-1;
+		  cout<<p<<endl;
+	}
+	      cout<<"El resultado de la serie es: "<<s<<endl;
+	getch();
+}
